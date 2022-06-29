@@ -38,6 +38,20 @@ header {
     font-family: 'Italiana', serif;
 }
 
+
+/* Form styling */
+
+.form-control:focus {
+    box-shadow: none;
+  }
+  
+  .form-control-underlined {
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-radius: 0;
+    padding-left: 0;
+  }
+
 .main-logo-link {
     width: fit-content;
 }
@@ -76,14 +90,14 @@ header {
 /* -------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
   .container {
     max-width: 80%;
   }
-} */
+} 
 
 /* fixed top navbar only on medium and up */
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -95,6 +109,6 @@ header {
     .header-container {
         padding-top: 164px;
     }
-} */
+} 
 
 
