@@ -10,10 +10,25 @@ header {
     height: 180vh;
     min-height: 400px;
     background-size: cover;
-    background-image: url('/media/feather-homepage.jpg') no-repeat center center fixed;
+    /* background: url('/media/feather-homepage.jpg') no-repeat center center fixed; */
     color: #555;
     font-family: 'Montserrat';
+    background-image: url('/media/feather-homepage.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+  
+  .navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
+  
+  .navbar-fixed-top.scrolled .nav-link {
+    color:#555;
+  }
+
 
 .bg-dark {
     background:transparent !important;
