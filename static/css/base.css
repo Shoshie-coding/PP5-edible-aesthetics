@@ -7,7 +7,7 @@ html {
 /* Full page header */
 
 header {
-    height: 180vh;
+    height: 110vh;
     min-height: 400px;
     background-size: cover;
     /* background: url('/media/feather-homepage.jpg') no-repeat center center fixed; */
@@ -104,6 +104,19 @@ header {
 
 .bg-black {
     background: #000 !important;
+}
+
+
+/* Products page  */
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
 
 /* -------------------- Media Queries */
