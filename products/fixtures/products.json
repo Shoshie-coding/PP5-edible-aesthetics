@@ -1,0 +1,49 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "SU456120",
+            "name": "Pinot Grigio",
+            "description": "This crisp and refreshing Pinot Grigio originates in the hills of the Italian region of Romagna. It is crafted from hand-harvested grapes which are vinified using traditional local winemaking techniques. The result is a bright and vivacious white wine which is bursting with notes of lemon zest, orchard fruits and hints of dried herbs and floral fragrance.",
+            "price": 65.99,
+            "category": 2,
+            "rating": 4.6,
+            "image_url": "",
+            "image": "DP0709201205510679M.jpg"
+        }
+    },
+
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "SU456121",
+            "name": "Rain drops in the morning",
+            "description": "Be inspired by this colorful, soft-focus picutre that will transport you to a wonderful summer morning",
+            "price": 45.00,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "",
+            "image": "rain-drops-photo"
+        }
+    },
+
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "SU456121",
+            "name": "Liz Claiborne Audra Classic Fit Straight Leg Pants",
+            "description": "Straight-leg styling and on-the-job comfort make our Audra pants a flattering business decision. flat front zip fly with hook-and-bar closure 2 front and 2 back welt pockets 34 1/2\" inseam polyester/rayon/spandex washable imported",
+            "price": 80.99,
+            "category": 3,
+            "rating": 4.6,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "DP0113201617034987M.jpg"
+        }
+    }
+
+
+
+]

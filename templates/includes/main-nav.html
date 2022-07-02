@@ -1,3 +1,6 @@
+{% load static %}
+
+
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
@@ -14,12 +17,11 @@
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Clothing
+                Food and wine
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
                 <a href="" class="dropdown-item">Chese and charcuterie boards</a>
                 <a href="" class="dropdown-item">Wines</a>
-                <a href="" class="dropdown-item">Food and Wine</a>
             </div>
         </li>
 
@@ -28,7 +30,7 @@
                 Homeware
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Nature and pastoral art/a>
+                <a href="" class="dropdown-item">Nature &amp; pastoral art</a>
                 <a href="" class="dropdown-item">Art &amp; art prints</a>
             </div>
         </li>
@@ -46,3 +48,8 @@
         </li>
     </ul>
 </div>
+
+{% block postloadjs %}
+<script src="{% static 'js/navbar.js' %}"></script>
+
+{% endblock %}
