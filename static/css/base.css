@@ -74,7 +74,7 @@ header {
 /* Shop now button themes */
 
 .shop-now-button {
-    background: blue;
+    background: green;
     color: white;
     min-width: 260px;
 }
@@ -143,4 +143,13 @@ header {
     }
 } 
 
+/* Pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
 
+    body {
+        height: calc(100vh - 116px);
+    }
+}
