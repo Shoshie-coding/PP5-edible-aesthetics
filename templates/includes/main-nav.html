@@ -11,39 +11,27 @@
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item">By Rating</a>
                 <a href="" class="dropdown-item">By Category</a>
-                <a href="" class="{% url 'products' %}">All Products</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Food and wine
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="photography-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Photography
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Chese and charcuterie boards</a>
-                <a href="" class="dropdown-item">Wines</a>
+            <div class="dropdown-menu border-0" aria-labelledby="photography-link">
+                <a href="{% url 'products' %}?category=nature" class="dropdown-item">Nature photography</a>
+                <a href="{% url 'products' %}?category=urban" class="dropdown-item">Urban photography</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Homeware
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="prints-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Period art prints
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Nature &amp; pastoral art</a>
-                <a href="" class="dropdown-item">Art &amp; art prints</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">19th Century</a>
-                <a href="" class="dropdown-item">American Literature</a>
-                <a href="" class="dropdown-item">Brittish Literature</a>
-                <a href="" class="dropdown-item">Books</a>
+            <div class="dropdown-menu border-0" aria-labelledby="prints-link">
+                <a href="{% url 'products' %}?category=19_century" class="dropdown-item">19th Century art prints</a>
+                <a href="{% url 'products' %}?category=18_century" class="dropdown-item">18th Century art prints</a>
             </div>
         </li>
     </ul>
