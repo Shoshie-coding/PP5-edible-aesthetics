@@ -9,8 +9,8 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -22,6 +22,8 @@
             <div class="dropdown-menu border-0" aria-labelledby="photography-link">
                 <a href="{% url 'products' %}?category=nature" class="dropdown-item">Nature photography</a>
                 <a href="{% url 'products' %}?category=urban" class="dropdown-item">Urban photography</a>
+                <a href="{% url 'products' %}?category=urban" class="dropdown-item">Flower photography prints</a>
+
             </div>
         </li>
 
@@ -30,8 +32,8 @@
                 Period art prints
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="prints-link">
-                <a href="{% url 'products' %}?category=19_century" class="dropdown-item">19th Century art prints</a>
-                <a href="{% url 'products' %}?category=18_century" class="dropdown-item">18th Century art prints</a>
+                <a href="{% url 'products' %}?category=19_century" class="dropdown-item">18th and 19th Century art prints</a>
+                <a href="{% url 'products' %}?category=18_century" class="dropdown-item">15th Century art prints</a>
             </div>
         </li>
     </ul>

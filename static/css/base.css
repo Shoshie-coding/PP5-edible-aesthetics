@@ -119,6 +119,12 @@ header {
 	z-index: -1;
 }
 
+
+a.category-badge > span.badge:hover {
+    background: blue !important;
+    color: #fff !important;
+}
+
 /* -------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
