@@ -6,7 +6,7 @@ html {
 
 /* Full page header */
 
-header {
+/* header {
     height: 110vh;
     min-height: 400px;
     background-size: cover;
@@ -17,7 +17,7 @@ header {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-}
+} */
 
   
   .navbar-fixed-top.scrolled {
@@ -147,18 +147,22 @@ a.category-badge > span.badge:hover {
     right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
 
-/* Shopping bag page */
+/* Product detail page */
 
 .img-detail {
     display: block;
     max-width: 75%;
     max-height: 80%;
 } 
+
+/* Shopping bag page */
 
 
 /* -------------------- Media Queries */
