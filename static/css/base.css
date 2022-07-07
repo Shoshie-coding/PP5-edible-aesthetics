@@ -6,21 +6,20 @@ html {
 
 /* Full page header */
 
-/* header {
+.index-header {
     height: 110vh;
     min-height: 400px;
-    background-size: cover;
     color: #555;
     font-family: 'Montserrat';
     background-image: url('/media/sunset-img.jpg');
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
-}  */
+    background-attachment: scroll;
+} 
 
   
-  .navbar-fixed-top.scrolled {
-    background-color: #fff !important;
+  .main-header.scrolled {
+    background-color: rgb(255,255,255);
     transition: background-color 200ms linear;
   }
   
