@@ -17,7 +17,7 @@
                 <div class="image-container my-5">
                     {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
-                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                            <img class="card-img-top img-detail " src="{{ product.image.url }}" alt="{{ product.name }}">
                         </a>
                         {% else %}
                         <a href="">
@@ -57,14 +57,11 @@
                                 <div class="col-12">
                                     <p><strong>Size:</strong></p>
                                     <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
-                                        <option value="xs">X-Small 8" X 10"</option>
-                                        <option value="s">Small 13" X 18"</option>
-                                        <option value="m" selected>Medium 17" X 22"</option>
-                                        <option value="l">Large 21" X 28"</option>
+                                        <option value="One-size" selected>Medium 17" X 22"</option>
                                     </select>
                                 </div>
                             {% endif %}
-                            <!-- Comtains quantity input - quantity and product ID -->
+                            <!-- Contains quantity input - quantity and product ID -->
                             <div class="col-12">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
