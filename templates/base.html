@@ -154,6 +154,7 @@
     {% block content %}
     {% endblock %}
 
+
     <!-- Footer section -->
     <footer class="page-footer font-small">
 
@@ -223,6 +224,12 @@
             <div class="footer-copyright text-center py-3">© 2020 Copyright: Cristina Onea
             </div>
     </footer>
+
+    {% block postloadjs %}
+    <script type="text/javascript">
+        $('.toast').toast('show');
+    </script>
+    {% endblock %}
 
 
 </body>
