@@ -19,8 +19,8 @@ html {
 
   
   .main-header.scrolled {
-    background-color: rgb(255,255,255);
-    transition: background-color 200ms linear;
+    background-color: #F4EBD0 !important;
+    transition: background-color 200ms linear !important;
   }
   
   .navbar-fixed-top.scrolled .nav-link {
@@ -49,6 +49,7 @@ html {
 .logo-font {
     text-transform: uppercase;
     font-family: 'Italiana', serif;
+    color: #122620;
 }
 
 
@@ -161,6 +162,11 @@ a.category-badge > span.badge:hover {
 } 
 
 /* Shopping bag page */
+
+
+/* Footer  */
+
+
 
 
 /* -------------------- Media Queries */
