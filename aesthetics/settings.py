@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+3va-7ybf*03z^d(sm^p7^4jqxryc9+los5nhu58&-ehq5ck!j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['photo-aesthetics.herokuapp.com', 'localhost']
 
