@@ -128,22 +128,18 @@ WSGI_APPLICATION = 'aesthetics.wsgi.application'
 #     }
 # }
 
-# DATABASES = {
-#     'default': dj_database_url.parse('postgres://rdtjqrebrxfojt:e4cc99d27c2ef3c123b22e64553b75d438910300dc44a3f099f1d194d4341c04@ec2-54-75-184-144.eu-west-1.compute.amazonaws.com:5432/daf437le5moutc')
-# }
-
-
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
-    'default': {
-    'ENGINE': 'django.db.backends.sqlite3',
-    'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
-    }
+
 
 
 # Password validation
