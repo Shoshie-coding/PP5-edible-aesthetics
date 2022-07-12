@@ -11,9 +11,10 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
-import dj_database_url
-
 from pathlib import Path
+import dj_database_url
+if os.path.isfile('env.py'):
+    import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,7 +29,7 @@ SECRET_KEY = 'django-insecure-+3va-7ybf*03z^d(sm^p7^4jqxryc9+los5nhu58&-ehq5ck!j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['photo-aesthetics.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -117,6 +118,8 @@ LOGIN_REDIRECT_URL = '/success'
 
 WSGI_APPLICATION = 'aesthetics.wsgi.application'
 
+if os.path.exists("env.py"):
+    import env
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
