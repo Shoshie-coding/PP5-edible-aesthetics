@@ -1,3 +1,22 @@
+# Photo Aesthetics
+
+1. [About this project](#About-project)
+2. [UX](#UX)
+
+[Back to top ⇧](#)
+
+
+
+
+
+
+
+
+
+
+
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome Cristina Onea,
@@ -89,6 +108,10 @@ It is not possible for us or anyone else to trace the random ID back to an indiv
 **So….?**
 
 We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+
+
+[Back to top ⇧](#)
+
 
 **Can I opt out?**
 
