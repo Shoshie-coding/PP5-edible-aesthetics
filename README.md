@@ -13,6 +13,15 @@
 4. [User Stories](#user-stories)
 5. [Main Features](#features)
 
+6. [Deployment](#deployment)
+
+
+## **Deployment**
+These are the steps taken to delpoy the Website on Heroku
+
+
+
+
 
 
 
