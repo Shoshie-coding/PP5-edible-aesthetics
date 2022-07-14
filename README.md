@@ -1,7 +1,20 @@
+# **Cogito, ergo sum**
+
+
 # Photo Aesthetics
 
+## **Table of Contents**
+
 1. [About this project](#About-project)
-2. [UX](#UX)
+2. [SEO and Marketing](#SEO-marketing)
+
+3. [UX](#UX)
+
+4. [User Stories](#user-stories)
+5. [Main Features](#features)
+
+
+
 
 [Back to top ⇧](#)
 
