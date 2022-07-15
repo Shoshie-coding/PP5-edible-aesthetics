@@ -19,7 +19,7 @@ html {
 
   
   .main-header.scrolled {
-    background-color: #F4EBD0 !important;
+    background-color: white !important;
     transition: background-color 200ms linear !important;
   }
   
