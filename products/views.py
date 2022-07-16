@@ -2,11 +2,25 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
-
+from django.views.generic.edit import CreateView, UpdateView
 from .models import Product, Category
+from django.contrib.admin.views.decorators import staff_member_required
 
 # Create your views here.
+class ProductCreateView(CreateView):
+    model = Product
+    fields = '__all__'   
 
+class ProductUpdateView(UpdateView):
+    model = Product
+    fields = '__all__'   
+
+@staff_member_required
+def delete(request):
+    if request.method == 'POST': 
+
+        p = Product.objects.get(pk=request.POST['id'])
+        p.delete()
 
 def all_products(request):
 

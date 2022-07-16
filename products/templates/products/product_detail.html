@@ -17,6 +17,18 @@
 
 <button type="submit">ADD TO WISHLIST</button>
 </form>
+{% if request.user.is_superuser %}
+
+<a href="{% url 'edit' product.id %}" lass="btn btn-primary">Update Prodcut</a>
+
+<form method="POST" action="/products/delete">
+    {% csrf_token %}
+<input type="text" name="id" hidden value="{{product.id}}" />
+<input type="hidden" name="redirect_url" value="{{ request.path }}">
+
+<button id="delete-button" type="submit">DELETE</button>
+{% endif %}
+</form>
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
