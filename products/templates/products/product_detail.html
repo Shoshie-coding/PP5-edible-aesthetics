@@ -10,6 +10,13 @@
 {% endblock %}
     
 {% block content %}
+<form method="POST" action="/wishlist/">
+    {% csrf_token %}
+<input type="text" name="id" hidden value="{{product.id}}" />
+<input type="hidden" name="redirect_url" value="{{ request.path }}">
+
+<button type="submit">ADD TO WISHLIST</button>
+</form>
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
