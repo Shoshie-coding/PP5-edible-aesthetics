@@ -13,6 +13,7 @@ def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
     products = Product.objects.all()
+    popular_products = Product.objects.filter(count__gt=0).order_by('count')[:5]
     query = None
     categories = None
     sort = None
@@ -52,6 +53,7 @@ def all_products(request):
 
     context = {
         'products': products,
+        'popular_products': popular_products,
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
