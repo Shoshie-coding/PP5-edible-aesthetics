@@ -32,4 +32,27 @@ def add(request):
     return redirect(redirect_url)
         
 
+@require_POST
+def remove(request):  
+
+    redirect_url = request.POST.get('redirect_url')
+    if request.user.is_authenticated:
+        
+        profile = UserProfile.objects.get(user=request.user)
+        try:
+            wl = Wishlist.objects.get(user_profile=profile)
+        except:
+            wl = Wishlist(user_profile=profile)
+            wl.save()
+        p = Product.objects.get(pk=request.POST['id'])
+       
+    
+        wi = WishlistItem.objects.get(wishlist=wl, product=p)
+        wi.delete()
+     
+
+        messages.success(request, f'Removed from your wishlist')
+    return redirect(redirect_url)
+        
+
 

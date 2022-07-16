@@ -10,7 +10,7 @@
 {% endblock %}
     
 {% block content %}
-<form method="POST" action="/wishlist/">
+<form method="POST" action="/wishlist/add/">
     {% csrf_token %}
 <input type="text" name="id" hidden value="{{product.id}}" />
 <input type="hidden" name="redirect_url" value="{{ request.path }}">

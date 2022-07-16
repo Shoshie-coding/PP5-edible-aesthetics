@@ -3,13 +3,14 @@ from django.contrib import messages
 
 from .models import UserProfile
 from .forms import UserProfileForm
-
+from wishlist.models import *
 from checkout.models import Order
 
 def profile(request):
     """ Display the user's profile. """
     profile = get_object_or_404(UserProfile, user=request.user)
-
+    wishlist = Wishlist.objects.get(user_profile=profile)
+    wish_list_items = WishlistItem.objects.filter(wishlist=wishlist)
     if request.method == 'POST':
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
@@ -23,6 +24,7 @@ def profile(request):
     context = {
         'form': form,
         'orders': orders,
+        'wish_list_items': wish_list_items,
         'on_profile_page': True
     }
 
