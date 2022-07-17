@@ -19,7 +19,7 @@
 </form>
 {% if request.user.is_superuser %}
 
-<a href="{% url 'edit' product.id %}" lass="btn btn-primary">Update Prodcut</a>
+<a href="{% url 'edit_product' product.id %}" lass="btn btn-primary">Update Prodcut</a>
 
 <form method="POST" action="/products/delete">
     {% csrf_token %}
