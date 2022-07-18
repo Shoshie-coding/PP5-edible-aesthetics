@@ -3,56 +3,44 @@
 
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
-        <!-- <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Products
-            </a> -->
-            <li class="nav-item">
-                <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
-                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="/">
-                    Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}">
-                    All Products
-                </a>
-              </li>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <!-- <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a> -->
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
-            </div>
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="/">
+                Home
+            </a>
         </li>
-
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}">
+                All Products
+            </a>
+        </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="photography-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="photography-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Photography
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="photography-link">
                 <a href="{% url 'products' %}?category=nature" class="dropdown-item">Nature photography</a>
                 <a href="{% url 'products' %}?category=urban" class="dropdown-item">Urban photography</a>
-                <a href="{% url 'products' %}?category=urban" class="dropdown-item">Flower photography prints</a>
-
+                <a href="{% url 'products' %}?category=urban" class="dropdown-item">Flower photography</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="prints-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="prints-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Period art prints
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="prints-link">
-                <a href="{% url 'products' %}?category=19_century" class="dropdown-item">18th and 19th Century art prints</a>
+                <a href="{% url 'products' %}?category=19_century" class="dropdown-item">18th and 19th Century art
+                    prints</a>
                 <a href="{% url 'products' %}?category=18_century" class="dropdown-item">15th Century art prints</a>
             </div>
         </li>
         <li class="nav-item">
-            <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="/newsletter/">
-                Subscribe to our newsletter
+                Newsletter
             </a>
-          </li>
+        </li>
     </ul>
 </div>
 
