@@ -7,9 +7,11 @@
 
 
 {% block page_header %}
-<div class="container-fluid header-container index-header">
+<div class="container-fluid header-container index-header" style="position:relative;">
     <div class="row">
-        <div class="col"></div>
+        <div class="col">
+            <h1 style="position:absolute; color: #fff; text-align: center; top: 200px; right: 0; left: 0">Fine Art Prints for your Aesthetic Prints</h1>
+        </div>
     </div>
 </div>
 {% endblock %}
@@ -35,7 +37,7 @@
             <form method="GET" action="{% url 'products' %}">
                 <div class="input-group w-100">
                     <input class="form-control border border-black rounded-2" type="text" name="q"
-                        placeholder="Search our site">
+                        placeholder="Search for fine art">
                     <div class="input-group-append">
                         <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                             <span class="icon">
@@ -45,7 +47,7 @@
                     </div>
                 </div>
             </form>
-        </div>
+        </div> 
 
         <!-- My account and shopping cart -->
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
