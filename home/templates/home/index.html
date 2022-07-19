@@ -110,27 +110,36 @@
     </div>
 
 </header>
-<div class="container>
-        <div class=" row">
-    <div class col="mt-5">
-        <h2 class="text-center mt-5 display-5">Popular products</h2>
-        <h3 class="text-center mt-5 mb-5">Browse our most poular products and let art inspire you!</h3>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center my-5">
+            <h2 class="text-center mt-5 display-5">Popular products</h2>
+            <h3 class="text-center mt-5 mb-5">Browse our most poular products and let art inspire you!</h3>
+        </div>
     </div>
-    <div class="row justify-content-center">
-        {%  for product in popular_products %}
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-            <div class="card shadow p-3 mb-5 bg-white rounded h-100">
-                <figure class="img"><img class="card-img-top" src="{{ product.image.url }}" alt="Card image cap">
-                </figure>
-                <div class="card-body text-center">
-                    <h5 class="card-title">{{ product.name }}</h5>
-                    <a href="{% url 'product_detail' product.id %}" class="btn btn-primary btn-border rounded-pill my-4 text-center">View Product</a>
+
+    <div class="row">
+        <div class="row row-cols-4 mt-1 mb-2"></div>
+            {%  for product in popular_products %}
+            <div class="col-sm-6 col-lg-3 mt-4">
+                <div class="card shadow p-3 mb-5 bg-white rounded h-100">
+                    <figure class="img"><img class="card-img-top" src="{{ product.image.url }}"
+                            alt="Card image cap">
+                    </figure>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <a href="{% url 'product_detail' product.id %}"
+                            class="btn btn-primary btn-border rounded-pill my-4 text-center">View Product</a>
+                    </div>
                 </div>
             </div>
-        </div>
+
         {% endfor %}
     </div>
+
+
 </div>
+
 
 {% endblock %}
 

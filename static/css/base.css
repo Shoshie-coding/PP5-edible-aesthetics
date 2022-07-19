@@ -3,7 +3,7 @@ html {
 
 }
 body {
-    font-family: 'Italiana' !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 /* Home page full page header */
@@ -53,6 +53,13 @@ body {
     color: #122620;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Italiana', serif;
+}
 
 /* Form styling */
 
