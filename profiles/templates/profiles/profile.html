@@ -81,7 +81,7 @@
                         <figure class="img"><img class="card-img-top" src="{{ item.product.image.url }}" alt="Card image cap"></figure>
                         <div class="card-body">
                           <h5 class="card-title">{{ item.product.name }}</h5>
-                          <a href="{% url 'product_detail' item.product.id %}" class="btn btn-primary">View Prodcut</a>
+                          <a href="{% url 'product_detail' item.product.id %}" class="btn btn-primary">View Product</a>
                           <form method="POST" action="/wishlist/remove/">
                             {% csrf_token %}
                         <input type="text" name="id" hidden value="{{item.product.id}}" />

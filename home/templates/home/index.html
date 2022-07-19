@@ -8,12 +8,19 @@
 
 {% block page_header %}
 <div class="container-fluid header-container index-header" style="position:relative;">
-    <div class="row">
+    <div class="row h-100 ml-2">
         <div class="col">
-            <h1 style="position:absolute; color: #fff; text-align: center; top: 200px; right: 0; left: 0">Fine Art Prints for your Aesthetic Prints</h1>
+            <h1 class="text-left display-5"
+                style="position:absolute; color: #fff; text-align: center; top: 200px; right: 0; left: 0">Fine Art
+                Prints for your Aesthetic Needs</h1>
+            <!-- <a href="{% url 'products' %}" class="btn btn-lg text-uppercase my-2 btn-light rounded-pill">Shop
+                Now</a> -->
         </div>
     </div>
 </div>
+
+
+
 {% endblock %}
 
 {% block content %}
@@ -47,7 +54,7 @@
                     </div>
                 </div>
             </form>
-        </div> 
+        </div>
 
         <!-- My account and shopping cart -->
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -104,7 +111,7 @@
 
 </header>
 <div class="container>
-        <div class="row">
+        <div class=" row">
     <div class col="mt-5">
         <h2 class="text-center mt-5 display-5">Popular products</h2>
         <h3 class="text-center mt-5 mb-5">Browse our most poular products and let art inspire you!</h3>
@@ -115,29 +122,16 @@
             <div class="card shadow p-3 mb-5 bg-white rounded h-100">
                 <figure class="img"><img class="card-img-top" src="{{ product.image.url }}" alt="Card image cap">
                 </figure>
-                <div class="card-body">
+                <div class="card-body text-center">
                     <h5 class="card-title">{{ product.name }}</h5>
-                    <a href="{% url 'product_detail' product.id %}" class="btn btn-primary">View Prodcut</a>
+                    <a href="{% url 'product_detail' product.id %}" class="btn btn-primary btn-border rounded-pill my-4 text-center">View Product</a>
                 </div>
             </div>
         </div>
         {% endfor %}
     </div>
 </div>
-<div class="row h-100">
-    <div class="col-7 col-md-6 my-auto">
-        <h1 class="display-4 logo-font text-black">
-            Find our curated products here
-        </h1>
-        <div class="my-5">
-            <h4>
-                <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-1 text-uppercase py-3">Shop
-                    Now</a>
-            </h4>
-        </div>
-    </div>
-</div>
-</div>
+
 {% endblock %}
 
 {% block postloadjs %}
