@@ -8,6 +8,7 @@ body {
 
 /* Home page full page header */
 
+
 .index-header {
     height: 110vh;
     min-height: 400px;
@@ -24,9 +25,12 @@ transition: background-color 200ms linear !important;
 }
   
 .navbar-fixed-top.scrolled .nav-link {
-color: white;
+    color: white;
 }
 
+.nav-link {
+    color: white;
+}
 
 .bg-dark {
     background-color: transparent !important;
@@ -56,6 +60,7 @@ color: white;
     color: white;
 }
 
+/* Global styles */
 
 h1,
 h2,
@@ -118,9 +123,6 @@ h5 {
     color: white;
 }
 
-.text-black {
-    color: #000 !important;
-}
 
 .border-black {
     border: 1px solid black !important;
@@ -256,7 +258,7 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    color: black; /* text-secondary */
 }
 
 .allauth-form-inner-content input {
@@ -277,19 +279,19 @@ input[name='q']::placeholder {
 	/* btn */
 	display: inline-block;
     font-weight: 400;
-    color: #fff;
+    color: white;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #F2B84B;
+    border: 1px solid #F2B84B;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 0;
+    border-radius: 5;
 
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -297,8 +299,8 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
-    background-color: #222;
+	color: white;
+    background-color: #176273;
     border-color: #222;
 }
 
