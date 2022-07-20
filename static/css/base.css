@@ -54,6 +54,7 @@ transition: background-color 200ms linear !important;
 .logo-font {
     text-transform: uppercase;
     font-family: 'Italiana', serif;
+    letter-spacing: 3px;
     color: white;
 }
 
@@ -69,6 +70,7 @@ h3,
 h4,
 h5 {
     font-family: 'Italiana', serif;
+    letter-spacing: 3px;
 }
 
 /* Form styling */
@@ -190,6 +192,14 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+
+footer {
+    background-color:#D0D8D9;
+}
+
+footer li {
+    margin: 10px 2px;
+}
 
 /* Toasts styling */
 
@@ -416,4 +426,3 @@ input[name='q']::placeholder {
     }
 }
 
-}
