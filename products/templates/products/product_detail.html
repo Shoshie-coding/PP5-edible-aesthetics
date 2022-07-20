@@ -50,7 +50,7 @@
                         {% csrf_token %}
                     <input type="text" name="id" hidden value="{{product.id}}" />
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                    <button type="submit">ADD TO WISHLIST</button>
+                    <button type="submit" class="btn btn-yellow">Add To Wishlist</button>
                     </form>
                     {% endif %}
                     </form>
