@@ -161,6 +161,9 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+.text-muted {
+    font-size: medium;
+}
 
 /* Product detail page */
 
