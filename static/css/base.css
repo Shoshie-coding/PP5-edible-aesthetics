@@ -92,8 +92,16 @@ h5 {
 
 .btn-yellow {
     background: #F2B84B;
-    color: #176273;
+    color: white;
 }
+
+.btn-yellow:hover,
+.btn-yellow:active,
+.btn-yellow:focus {
+    background: #176273;
+    color: white !important;
+}
+
 
 .btn-outline-black {
     background: white;
