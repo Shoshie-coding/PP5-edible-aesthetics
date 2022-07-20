@@ -12,10 +12,10 @@
         <div class="col">
             <h1 class="text-left display-5"
                 style="position:absolute; color: #fff; text-align: center; top: 200px; right: 0; left: 0" class="my-auto">Fine Art
-                Prints for your Aesthetic Needs</h1>
+                Prints for your Aesthetic Needs
             
-            <a style="position:absolute;top:40%;left:-5px;" href="{% url 'products' %}" class="shop-now btn btn-lg my-auto text-uppercase my-2 btn-light rounded-pill">Shop
-                Now</a>
+            <a  style="display:block; width:200px;margin-top:30px !important;" href="{% url 'products' %}" class="shop-now btn btn-lg my-auto text-uppercase my-2 btn-light rounded-pill">Shop
+                Now</a></h1>
         </div>
     </div>
 </div>
@@ -119,10 +119,10 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="row row-cols-4 mt-1 mb-2"></div>
+    <div class="row justify-content-md-center ">
+        
             {%  for product in popular_products %}
-            <div class="col-sm-6 col-lg-3 mt-4">
+            <div class="col-sm-4 col-lg-3 col-xl-2 mt-4">
                 <div class="card shadow p-3 mb-5 bg-white rounded h-100">
                     <figure class="img"><img class="card-img-top" src="{{ product.image.url }}"
                             alt="Card image cap">
