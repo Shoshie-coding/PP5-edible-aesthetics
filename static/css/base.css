@@ -41,6 +41,7 @@ transition: background-color 200ms linear !important;
 }
 
 
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -89,15 +90,9 @@ h5 {
 
 /* Shop now button themes */
 
-.shop-now-button {
-    background: green;
-    color: white;
-    min-width: 260px;
-}
-
-.btn-black {
-    background: black;
-    color: white;
+.btn-yellow {
+    background: #F2B84B;
+    color: #176273;
 }
 
 .btn-outline-black {
@@ -119,7 +114,7 @@ h5 {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: purple;
+    background: #F2B84B;
     color: white;
 }
 
