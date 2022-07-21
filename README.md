@@ -131,12 +131,66 @@ As a Shopper I can identify the categories of products on the website so I can s
 I've created a custom Newsletter model to send marketing emails and updates on new products and releases. 
 
 I've also create a Facebook business page in order to keep in touch with clients and users on social media as well.
-The page can be accessed here [Facebook page](https://www.facebook.com/profile.php?id=100083382653686&is_tour_dismissed=true)
+The page can be accessed here [Facebook page](https://www.facebook.com/profile.php?id=100083382653686)
+
+![Facebook page 1](media/general/facebook-1.png)
+![Facebook page 2](media/general/facebook-2.png)
+![Facebook page 3](media/general/facebook-3.png)
+
 
 ### SEO
 In order to improve SEO for this website I've used several main keywords such as fine art prints, period art prints, nature photography. I've also used descriptive meta tags such as landscape photography and calm landscape prints. 
 
+## UX design
+In building this website, I've followed the principles of UX design and implemented features that are responsive, are visually pleasing and overall create a good experience for the User.
+The footer and header have a bold thene color counteracted by the yellow-mustardy color of the buttons. I left everything else simple as not to overpower the products which are the focus of the website. 
 
+## **Main Features**
+
+### Existing features
+- Home page
+![Homepage](media/general/homepage.png)
+
+- Popular products section
+![Popular section](media/general/popular-section.png)
+
+- Footer
+![Footer](media/general/footer.png)
+
+- All products page
+![Homepage](media/general/all-products.png)
+
+- Category page
+![Homepage](media/general/category.png)
+
+- Product detail page
+![Product detail](media/general/product-detail.png)
+
+- Success messages
+![Success message](media/general/success.png)
+
+- Shopping bag
+![Shopping bag](media/general/shopping-bag.png)
+
+- Checkout page
+![Checkout page](media/general/checkout.png)
+
+
+- Thank you page after purchase
+![Thank you for purchase](media/general/thank-purchase.png)
+
+- Signup to Newsletter
+![Newsletter](media/general/newsletter.png)
+
+- Add Product
+![Add product](media/general/add-product.png)
+
+- Profile
+![Add product](media/general/profile.png)
+
+- Wishlist
+
+![Wishlist](media/general/wishlist.png)
 
 
 ## **Deployment**
