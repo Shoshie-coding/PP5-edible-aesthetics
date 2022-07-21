@@ -10,10 +10,9 @@
 
 3. [UX](#UX)
 
-4. [User Stories](#user-stories)
+4. [Agile Methodology and User Stories](#user-stories)
 5. [Main Features](#features)
-6. [Wire Frames](#wire-frames)
-7. [Agile Methodology](#agile)
+6. [Wireframes](#wireframes)
 8. [Testing](#testing)
 9. [Technologies used](#technologies)
 6. [Deployment](#deployment)
@@ -27,7 +26,7 @@ The targeted demographis is anyone who enjoys art and photography and want to bu
 
 ## **SEO and Marketing**
 
-## **User Stories**
+## **Agile Methodology and User Stories**
 User Stories have been achieved to built this website as follows:
 
 ### Viewing product and navigation
@@ -196,7 +195,7 @@ The footer and header have a bold thene color counteracted by the yellow-mustard
 
 ![Wishlist](media/general/wishlist.png)
 
-## **Wrireframes**
+## **Wireframes**
 
 - Homepage
 ![Homepage](media/general/wireframe-1.png)
