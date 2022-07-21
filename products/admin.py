@@ -4,6 +4,7 @@ from .models import Product, Category
 # Class shows product details on the Admin Panel
 # Based on Code Institute's Boutique Ado project
 
+
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'sku',
@@ -16,6 +17,7 @@ class ProductAdmin(admin.ModelAdmin):
 
     ordering = ('sku',)
 
+
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
@@ -24,5 +26,3 @@ class CategoryAdmin(admin.ModelAdmin):
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
-
-

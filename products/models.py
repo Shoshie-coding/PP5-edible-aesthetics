@@ -35,7 +35,6 @@ class Product(models.Model):
     image = models.ImageField(null=True, blank=True)
     in_stock = models.BooleanField(default=True)
     count = models.IntegerField(default=0)
+   
     def __str__(self):
         return self.name
-
- 
