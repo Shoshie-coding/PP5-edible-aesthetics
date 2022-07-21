@@ -12,8 +12,131 @@
 
 4. [User Stories](#user-stories)
 5. [Main Features](#features)
-
+6. [Wire Frames](#wire-frames)
+7. [Agile Methodology](#agile)
+8. [Testing](#testing)
+9. [Technologies used](#technologies)
 6. [Deployment](#deployment)
+9. [Credits](#credits)
+
+## **About this project**
+This is a fully-responsive e-commerce website that was built using Django framework with Python and Booostrap as main technologies. 
+This website represents an online shop that sells high quality photo prints and fine art prints. It sells also has prints of period or vintage art pieces. 
+Users can login for an account and they can sign up to the newsletter. They can add their favorite prints to the wishlist and view these items from their profile. 
+The targeted demographis is anyone who enjoys art and photography and want to buy good quality prints.  
+
+## **SEO and Marketing**
+
+## **User Stories**
+User Stories have been achieved to built this website as follows:
+
+### Viewing product and navigation
+
+As a Shopper I can view a list of products so that I can see what the shop can offer 
+
+As a Shopper I can view specific product details so that I can see the price, description and product image
+
+As a Shopper I can register for an account so that I can set up a profile for the website and view it
+
+As a Shopper I can see all my purchases so that I can see how much I spent on each item
+
+As a Shopper I can see what is in my shopping bag so I can can check all the items are correct
+
+As a Shopper I can identify the categories of products on the website so I can see all my options before making a purchase
+
+
+
+### Registration and User accounts
+
+
+- As a Shopper I can login and logout so that I can access my personal account information
+
+- As a Shopper I can easily recover my password if I forget it so that I can access my account info and purchase history
+
+- As a Shopper I can receive a registration confirmation email so that I can verify my registration to the site was successful
+
+- As a Shopper I can set up a personalised user profile so that I can view my order history and personal details
+
+
+### Searching and Sorting products
+
+
+- As a Shopper I can sort the list of available products so that I can easily identify best priced and categorically sorted products
+
+- As a Shopper I can sort a specific category of product so that I can find the best priced in a specific category or sort the products by name
+
+- As a Shopper I can sort multiple categories of products at the same time so that I can find the best priced products across categories such as ‘photography’ or ‘period art prints’.
+
+- As a Shopper I can search for a product by name or description so that I can find specific product I’d like to purchase
+
+- As a Shopper I can see the number of results for my search so I can see if the product I want is available
+
+
+### Purchasing and Checkout
+
+- As a Shopper I can select the size and quantity of products when purchasing them so that I can be sure I make no mistakes about the quantity and print size
+
+- As a Shopper I can see messages from the shop so that I know if my item was added to the bag or removed
+
+
+- As a Shopper I can view items in my bag to be purchased so that I can identify the total cost of my purchase and all items I will receive
+
+- As a Shopper I can adjust the quantity of items in my bag so that I can make changes to my purchase before checkout
+
+- As a Shopper I can easily enter my payment information so that I can add to checkout my desired products
+
+- As a Shopper I know that my personal and payment information is safe and secure so that I can confidently provide the necessary card details to make a purchase
+
+
+### Wishlist
+
+- As a Shopper I can navigate to a product and click on the add to Wishlist button so that I can add the products I want to purchase in the future
+
+- As a Shopper I can navigate to My Profile and remove items from My Wishlist so that I can remove a product I’m not interested in buying anymore
+
+
+### Admin & Management (CRUD)
+
+- As an Admin User I can add new products to the website so that I can provide clients with new incoming products.
+
+- As an Admin User I can modify product details so that I can update product details
+
+- As an Admin User I can delete products so that I can update the site when a product isn’t being sold anymore
+
+
+
+### Newsletter subscriber
+
+- As a **Shopper / Admin** I want to **register to the site's newsletter** so that **I can be kept up to date with marketing updates and news**
+
+
+- As a Shopper / Admin I can see a pop up message when signing up for newsletter
+
+### Pop up messages / Toasts
+
+- As a site user I want to see pop-up messages when I make an action to confirm transactions and changes** so that I can rest assured my transactions and activities have been successful**
+
+
+### Deploy project
+
+- As a Shopper I can access the website in a publicly accessible domain so that I can view the website and use its functionalities
+
+
+### User Stories to implement
+
+- As a Shopper I want to be able to see price changing depending on which print size I chose so that I can see if the price is different or not.
+
+
+## **SEO and Marketing**
+I've created a custom Newsletter model to send marketing emails and updates on new products and releases. 
+
+I've also create a Facebook business page in order to keep in touch with clients and users on social media as well.
+The page can be accessed here [Facebook page](https://www.facebook.com/profile.php?id=100083382653686&is_tour_dismissed=true)
+
+### SEO
+In order to improve SEO for this website I've used several main keywords such as fine art prints, period art prints, nature photography. I've also used descriptive meta tags such as landscape photography and calm landscape prints. 
+
+
 
 
 ## **Deployment**
@@ -55,8 +178,6 @@ This project was deployed on Heroku using these steps:
 
 
 
-
-
 ### Clone a repository using these steps:
 1. On GitHub, navigate to the main page of the repository.
 
@@ -67,12 +188,6 @@ This project was deployed on Heroku using these steps:
 5. Type git clone, and then paste the URL you copied earlier.
 
 6. You will see a message confirmation that the command was successul.
-
-
-
-
-
-
 
 
 [Back to top ⇧](#)
