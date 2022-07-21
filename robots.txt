@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /bag/
+Sitemap: https://photo-aesthetics.herokuapp.com/sitemap.xml
