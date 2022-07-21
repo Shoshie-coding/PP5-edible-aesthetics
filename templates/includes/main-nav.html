@@ -13,27 +13,21 @@
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="photography-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="photography-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Photography
             </a>
             <div class="dropdown-menu border-dark border-rounded" aria-labelledby="photography-link">
-                <a href="{% url 'products' %}?category=nature" class="dropdown-item">Nature photography</a>
-                <a href="{% url 'products' %}?category=urban" class="dropdown-item">Urban photography</a>
-                <a href="{% url 'products' %}?category=urban" class="dropdown-item">Flower photography</a>
+                <a href="{% url 'products' %}?category=nature_photography" class="dropdown-item">Nature Photography</a>
+                <a href="{% url 'products' %}?category=floral_photography" class="dropdown-item">Floral Photography</a>
             </div>
         </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link" href="#" id="prints-link" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Period art prints
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link" href="{% url 'products' %}?category=vintage"
+                id="vintage-link">
+                Period Art Prints
             </a>
-            <div class="dropdown-menu border-dark border-rounded" aria-labelledby="prints-link">
-                <a href="{% url 'products' %}?category=19_century" class="dropdown-item">18th and 19th Century art
-                    prints</a>
-                <a href="{% url 'products' %}?category=18_century" class="dropdown-item">15th Century art prints</a>
-            </div>
         </li>
         <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link mr-5" href="/newsletter/">
