@@ -7,9 +7,7 @@
 
 1. [About this project](#About-project)
 2. [SEO and Marketing](#SEO-marketing)
-
-3. [UX](#UX)
-
+3. [UX design](#UX)
 4. [Agile Methodology and User Stories](#user-stories)
 5. [Main Features](#features)
 6. [Wireframes](#wireframes)
@@ -42,8 +40,6 @@ As a Shopper I can see all my purchases so that I can see how much I spent on ea
 As a Shopper I can see what is in my shopping bag so I can can check all the items are correct
 
 As a Shopper I can identify the categories of products on the website so I can see all my options before making a purchase
-
-
 
 ### Registration and User accounts
 
@@ -103,7 +99,6 @@ As a Shopper I can identify the categories of products on the website so I can s
 - As an Admin User I can delete products so that I can update the site when a product isn’t being sold anymore
 
 
-
 ### Newsletter subscriber
 
 - As a **Shopper / Admin** I want to **register to the site's newsletter** so that **I can be kept up to date with marketing updates and news**
@@ -127,7 +122,6 @@ As a Shopper I can identify the categories of products on the website so I can s
 
 ### Kanban board
 ![Kanban board](media/general/kanban-board.png)
-
 
 
 ## **SEO and Marketing**
@@ -211,6 +205,69 @@ The footer and header have a bold thene color counteracted by the yellow-mustard
 - Shopping bag
 ![Product detail](media/general/wireframe-5.png)
 
+## **Testing**
+
+Testing has been done manually, I'v tested the website on various smart devices - phones and tablets. I'v also goen to Inspect in Chrome Developper tools and adjusted the size of the screen there as well. 
+
+- **Login/logout/register:** The user can use all these features with no errors, pop up messages appearing as well.
+
+- **Search bar:** I can search for products and all products are being displayed and also the number of results that are returned. 
+
+- **Navigation bar:** All the links to the different categories (including their dropdown menus) and the newsletter link are working correctly.
+- **Producr details:** I can access product detail page and click on add to wishlist, edit, delete, change print size and increment and decrement quantity. Admin can click on edit and delete buttons. Admin is promoted to confirm if they want to delete the product. 
+
+- **Product Management:** From 'My Account' dropdown menu the superuser can add products with and without images. 
+
+- **Footer:** All the links to social media working correctly and as expected, no broken links.
+
+- **My profile:** The dropdown menu works as expected and no broken links. When clicking the menu responds to the different types of users (admin functions appear when superuser is logged in and not present for site users) and if the user is logged in or not.
+
+- **Bag:** The feature is working as expected as well, link to the selected products are working correctly, the quantity can be amended as well with no issues (quantity doesn't go beyond 99 or below 1), 'Update' and 'Remove' buttons working as well as 'Keep Shopping' and 'Secure Checkout'.
+
+- **Checkout:** Page loading successfully, delivery information also adds correctly to the delivery form as well as good functioning of 'Adjust Bag' and 'Complete Order' buttons. The summary of selected items to buy show correctly including the print image, quantity selected, subtotal, total, delivery amount and grand total.
+
+- **Newsletter:** Subscribing for the newsletter feature working correctly, when subscribing with a new email and confirmation email is sent to the entered address and if an existing email address is added an informational pop up message appears informing so.
+
+- **My profile:** Both site user and superuser can enter access their profile information through 'My Account' dropdown menu. The default delivery information can be updated with no issues, and the order history is available, the links to each order details is accessible (no broken links). 
+User can also see their Wishlist items only if they create an account. 
+
+- **Pop Up Messages:** All pop up messages working correctly and appearing when expected: confirmation to confirm purchases, information when a product is added to wishlist and warning messages when something goes wrong. 
+#### **Validator Testing**
+
+- Used [PEP8online.com](http://pep8online.com/) to validate Python code.
+There are several errors due to line being too long. The screenshots from th testing can be found in the Readme docs
+
+![pep8](Readme-docs/pep8-validator/pep8-1.png)
+
+- Used [W3C](https://validator.w3.org) to validate HTML and CSS code
+However mostly due to the use of django templating I receiced several issues 
+
+
+- Lighthouse report can be see as below
+![Lighthouse](media/general/lighthouse.png)
+
+
+#### **Remaining bugs**
+- When making a payment with Stripe test credit card, I check the webhook in Stripe and the payment is successful. The use doesn't receive a confirmation email regardless of wether the payment is successfull or not. 
+
+
+## **Technologies Used**
+
+- [Gitpod](https://gitpod.io/)
+- [Github](https://github.com/)
+- All credits go to [Unsplash](https://unsplash.com/) and from the online album provided by the Brittish Lirabry on
+[Flickr](https://www.flickr.com/photos/britishlibrary/albums/72157640831988343/with/12459046025/)
+All images from both websites are royalty free.
+
+- [Django](https://www.djangoproject.com/)
+- [Heroku](https://id.heroku.com/)
+- [Balsamiq](https://balsamiq.cloud/)
+- [PEP8online.com](http://pep8online.com/)
+- [W3C](https://validator.w3.org/#validate_by_input)
+- [Stackoverflow](https://stackoverflow.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Coolors](https://coolors.co/)
+
 
 
 
@@ -245,14 +302,6 @@ This project was deployed on Heroku using these steps:
 13. In settings.py set up debug to true only if there is a variable called development in the environment;
 
 
-
-4. Complete the config vars section
-5. Link Heroku and GitHub accounts together
-6. Select the Github repo that you use for the app and give it a name
-7. Click on deploy.
-
-
-
 ### Clone a repository using these steps:
 1. On GitHub, navigate to the main page of the repository.
 
@@ -264,8 +313,9 @@ This project was deployed on Heroku using these steps:
 
 6. You will see a message confirmation that the command was successul.
 
+## Acknowledgments
 
-[Back to top ⇧](#)
+My mentor for feedback and guiding me throughout the process and everyone at Code Institute who provided helpful tips along the way.
 
 
 
@@ -274,120 +324,3 @@ This project was deployed on Heroku using these steps:
 
 
 
-
-
-
-
-
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome Cristina Onea,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-
-[Back to top ⇧](#)
-
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
