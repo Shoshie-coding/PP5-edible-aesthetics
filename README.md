@@ -126,6 +126,10 @@ As a Shopper I can identify the categories of products on the website so I can s
 
 - As a Shopper I want to be able to see price changing depending on which print size I chose so that I can see if the price is different or not.
 
+### Kanban board
+![Kanban board](media/general/kanban-board.png)
+
+
 
 ## **SEO and Marketing**
 I've created a custom Newsletter model to send marketing emails and updates on new products and releases. 
@@ -191,6 +195,24 @@ The footer and header have a bold thene color counteracted by the yellow-mustard
 - Wishlist
 
 ![Wishlist](media/general/wishlist.png)
+
+## **Wrireframes**
+
+- Homepage
+![Homepage](media/general/wireframe-1.png)
+
+- All Products
+
+![All Products](media/general/wireframe-2.png)
+
+- Product detail
+![Product detail](media/general/wireframe-3.png)
+
+
+- Shopping bag
+![Product detail](media/general/wireframe-5.png)
+
+
 
 
 ## **Deployment**
