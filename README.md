@@ -1,20 +1,20 @@
-# **Cogito, ergo sum**
-
-
 # Photo Aesthetics
+
+You can view the live website [here](https://photo-aesthetics.herokuapp.com/)
+![Homepage image](media/general/am-i-responsive.png) 
 
 ## **Table of Contents**
 
-1. [About this project](#About-project)
-2. [SEO and Marketing](#SEO-marketing)
-3. [UX design](#UX)
-4. [Agile Methodology and User Stories](#user-stories)
+1. [About this project](#about)
+2. [Agile Methodology and User Stories](#user-stories)
+3. [SEO and Marketing](#seo-marketing)
+4. [UX design](#ux)
 5. [Main Features](#features)
-6. [Wireframes](#wireframes)
-8. [Testing](#testing)
-9. [Technologies used](#technologies)
-6. [Deployment](#deployment)
-9. [Credits](#credits)
+6. [Wireframes](#wireframes) 
+7. [Testing](#testing)
+8. [Technologies used](#technologies)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
 
 ## **About this project**
 This is a fully-responsive e-commerce website that was built using Django framework with Python and Booostrap as main technologies. 
@@ -22,7 +22,6 @@ This website represents an online shop that sells high quality photo prints and 
 Users can login for an account and they can sign up to the newsletter. They can add their favorite prints to the wishlist and view these items from their profile. 
 The targeted demographis is anyone who enjoys art and photography and want to buy good quality prints.  
 
-## **SEO and Marketing**
 
 ## **Agile Methodology and User Stories**
 User Stories have been achieved to built this website as follows:
